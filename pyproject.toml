@@ -1,0 +1,38 @@
+[project]
+name = "logwarp"
+version = "0.1.0"
+description = "Logwarp, log processor and analyzer."
+requires-python = ">= 3.12"
+authors = [{ name = "Lukasz Tuz", email = "lukasz@bitsandpixels.io" }]
+dependencies = ["numpy", "scipy"]
+readme = "README.md"
+license-files = ["LICENSE"]
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Development Status :: 2 - Pre-Alpha",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "hatchling",
+    "ipykernel",
+    "matplotlib",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+logwarp = "logwarp:main"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+pythonpath = ["src"]

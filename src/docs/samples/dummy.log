@@ -1,0 +1,435 @@
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+plasmashell: lol, crash
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
+systemd[1]: Reached target Bluetooth Support.
+kernel: Bluetooth: hci0: command 0xfc61 tx timeout
+kernel: Bluetooth: hci0: RTL: Failed to generate devcoredump
+kernel: Bluetooth: hci0: Resetting usb device.
+kernel: Bluetooth: hci0: RTL: RTL: Read reg16 failed (-110)
+systemd[1]: Stopped target Bluetooth Support.
+kernel: usb 1-1.1: reset full-speed USB device number 6 using xhci_hcd
