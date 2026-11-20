@@ -8,7 +8,8 @@ Visualize, filter, analyze, and find anomalies in your log files, gaining real
 understanding and insights in seconds. Local-first, command line-friendly.
 </p>
 
-<p align="center"><img src="https://bitsandpixels.io/logwarp.gif" width="720" /></p>
+<p align="center"><img width="600" height="338" alt="logwarp" src="https://github.com/user-attachments/assets/94140318-326d-4c3f-9f25-0c350bc125d1" /></p>
+
 
 Logwarp is a Python library developed based on decades of reading, analyzing,
 correlating, and otherwise digging through log files - from simple `printf` over
