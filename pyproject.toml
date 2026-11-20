@@ -1,6 +1,8 @@
 [project]
 name = "logwarp"
-version = "0.1.0"
+# Version is managed dynamically via git tags — do NOT edit this field manually.
+# To release a new version: git tag v1.2.3 && git push --tags
+dynamic = ["version"]
 description = "Logwarp, log processor and analyzer."
 requires-python = ">= 3.12"
 authors = [{ name = "Lukasz Tuz", email = "lukasz@bitsandpixels.io" }]
@@ -19,6 +21,7 @@ classifiers = [
 [project.optional-dependencies]
 dev = [
     "build",
+    "hatch-vcs",
     "hatchling",
     "ipykernel",
     "matplotlib",
@@ -30,8 +33,24 @@ dev = [
 logwarp = "logwarp:main"
 
 [build-system]
-requires = ["hatchling >= 1.26"]
+requires = ["hatchling >= 1.26", "hatch-vcs"]
 build-backend = "hatchling.build"
+
+# ---------------------------------------------------------------------------
+# Version source: git tags (via hatch-vcs / setuptools-scm)
+# Tag format: v{MAJOR}.{MINOR}.{PATCH}  e.g. v0.1.0
+# ---------------------------------------------------------------------------
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+# On an exact tag → clean version (e.g. "0.1.0")
+# Between tags    → "0.2.0.dev3+gABCDEF" (N commits since last tag)
+version_scheme = "guess-next-dev"
+
+[tool.hatch.build.hooks.vcs]
+# hatch-vcs writes src/logwarp/_version.py at build / editable-install time
+version-file = "src/logwarp/_version.py"
 
 [tool.pytest.ini_options]
 addopts = ["--import-mode=importlib"]

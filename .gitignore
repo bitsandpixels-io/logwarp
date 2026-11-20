@@ -167,3 +167,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+src/logwarp/_version.py
