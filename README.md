@@ -8,12 +8,12 @@ Visualize, filter, analyze, and find anomalies in your log files, gaining real
 understanding and insights in seconds. Local-first, command line-friendly.
 </p>
 
-<p align="center"><video src="https://bitsandpixels.io/logwarp.mp4" width="762px" autoplay muted loop /></p>
+<p align="center"><img src="https://bitsandpixels.io/logwarp.gif" width="720" /></p>
 
 Logwarp is a Python library developed based on decades of reading, analyzing,
 correlating, and otherwise digging through log files - from simple `printf` over
 serial port to gigabytes of traces.
-
+v
 Logwarp treats log files as signals carrying information, and applies good'ol
 DSP to process that information. Find distinctive log lines as signal peaks,
 apply low-pass filters to get rid of the noise, use FFT to find repeating
