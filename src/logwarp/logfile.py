@@ -13,6 +13,7 @@ import re
 from collections import UserString
 from collections.abc import Callable
 from concurrent.futures import ProcessPoolExecutor
+from datetime import datetime
 from pathlib import Path
 from typing import overload
 
@@ -48,7 +49,21 @@ class LogSignalProcessor:
 
 
 class LogLine(UserString):
+    """Representation of a single log line.
+
+    Essentially, a string, but with extra read-only properties, common for log
+    files:
+
+    - line number; carries the number of the line in the original file.
+      Immutable, even when file is split, filtered, or merged.
+    - timestamp; optional. If there is a time stamp embedded in the log line
+      and it is correctly identified, this property holds its value as datetime
+    - level; optional, keeps information about log level of the line
+    """
+
     _number: int
+    _timestamp: datetime
+    _level: str
 
     def __init__(self, line: str, /, n: int = -1):
         self._number = n
@@ -57,6 +72,14 @@ class LogLine(UserString):
     @property
     def number(self):
         return self._number
+
+    @property
+    def timestamp(self):
+        return self._timestamp
+
+    @property
+    def level(self):
+        return self._level
 
 
 class LogFileSplit(dict):
