@@ -15,14 +15,12 @@ Coverage:
 
 import argparse
 import json
-import sys
-from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
 
-import logwarp.cli as cli
 from logwarp.cli import (
+    _LINE_NUMBER_DELIMITER,
     _format_lines,
     _output_lines,
     _output_split,
@@ -35,8 +33,7 @@ from logwarp.cli import (
     cmd_split,
     main,
 )
-from logwarp.logfile import LogFile, LogFileSplit
-
+from logwarp.logfile import LogFile, LogFileSplit, LogLine
 
 # ---------------------------------------------------------------------------
 # Shared fixtures
@@ -221,14 +218,18 @@ def _make_split(buckets: dict) -> LogFileSplit:
 class TestOutputSplit:
     def test_stdout_plain(self, capsys):
         split = _make_split({"INFO": ["line1", "line2"], "ERROR": ["err"]})
-        _output_split(split, None, write=False, stdout=True, as_yaml=False, as_json=False)
+        _output_split(
+            split, None, write=False, stdout=True, as_yaml=False, as_json=False
+        )
         out = capsys.readouterr().out
         assert "INFO" in out
         assert "line1" in out
 
     def test_stdout_json(self, capsys):
         split = _make_split({"A": ["x"], "outliers": []})
-        _output_split(split, None, write=False, stdout=True, as_yaml=False, as_json=True)
+        _output_split(
+            split, None, write=False, stdout=True, as_yaml=False, as_json=True
+        )
         out = capsys.readouterr().out
         data = json.loads(out)
         assert "A" in data
@@ -236,7 +237,9 @@ class TestOutputSplit:
 
     def test_default_prints_when_no_stdout_no_write(self, capsys):
         split = _make_split({"X": ["foo"]})
-        _output_split(split, None, write=False, stdout=False, as_yaml=False, as_json=False)
+        _output_split(
+            split, None, write=False, stdout=False, as_yaml=False, as_json=False
+        )
         out = capsys.readouterr().out
         assert "foo" in out
 
@@ -324,6 +327,33 @@ class TestOutputLines:
         written = list(tmp_path.glob("file_logwarp_find_similar_*.log"))
         assert len(written) == 1
 
+    def test_stdout_line_numbers_default_off(self, capsys):
+        _output_lines(
+            [LogLine("hello")],
+            None,
+            write=False,
+            stdout=False,
+            as_yaml=False,
+            as_json=False,
+            operation="op",
+        )
+        out = capsys.readouterr().out
+        assert f"1{_LINE_NUMBER_DELIMITER}" not in out
+
+    def test_stdout_line_numbers_optin(self, capsys):
+        _output_lines(
+            [LogLine("hello")],
+            None,
+            write=False,
+            stdout=False,
+            as_yaml=False,
+            as_json=False,
+            operation="op",
+            line_numbers=True,
+        )
+        out = capsys.readouterr().out
+        assert f"1{_LINE_NUMBER_DELIMITER}" in out
+
 
 # ===========================================================================
 # build_parser — structure and defaults
@@ -343,7 +373,9 @@ class TestBuildParser:
         assert args.func is cmd_split
 
     def test_split_all_flags(self, parser):
-        args = parser.parse_args(["split", "-i", "foo.log", "-w", "-o", "-Y", "-j", "2"])
+        args = parser.parse_args(
+            ["split", "-i", "foo.log", "-w", "-o", "-Y", "-j", "2"]
+        )
         assert args.write is True
         assert args.stdout is True
         assert args.yaml is True
@@ -351,7 +383,16 @@ class TestBuildParser:
 
     def test_split_long_flags(self, parser):
         args = parser.parse_args(
-            ["split", "--input", "foo.log", "--write", "--stdout", "--yaml", "--json", "2"]
+            [
+                "split",
+                "--input",
+                "foo.log",
+                "--write",
+                "--stdout",
+                "--yaml",
+                "--json",
+                "2",
+            ]
         )
         assert args.write is True
         assert args.input == "foo.log"
@@ -389,11 +430,18 @@ class TestBuildParser:
     def test_find_distinctive_all_kwargs(self, parser):
         args = parser.parse_args(
             [
-                "find", "-i", "foo.log", "distinctive",
-                "--height", "1.5",
-                "--prominence", "2.0",
-                "--distance", "10",
-                "--kernel-size", "5",
+                "find",
+                "-i",
+                "foo.log",
+                "distinctive",
+                "--height",
+                "1.5",
+                "--prominence",
+                "2.0",
+                "--distance",
+                "10",
+                "--kernel-size",
+                "5",
             ]
         )
         assert args.height == pytest.approx(1.5)
@@ -430,7 +478,9 @@ class TestBuildParser:
 
 
 class TestCmdSplit:
-    def _args(self, by, input_file, *, write=False, stdout=True, yaml=False, json=False):
+    def _args(
+        self, by, input_file, *, write=False, stdout=True, yaml=False, json=False
+    ):
         ns = argparse.Namespace(
             by=by,
             input=input_file,
@@ -489,8 +539,16 @@ class TestCmdSplit:
 
 class TestCmdFindSimilar:
     def _args(
-        self, index, input_file, *, step=None, q=None,
-        write=False, stdout=True, yaml=False, json=False,
+        self,
+        index,
+        input_file,
+        *,
+        step=None,
+        q=None,
+        write=False,
+        stdout=True,
+        yaml=False,
+        json=False,
     ):
         return argparse.Namespace(
             index=index,
@@ -555,8 +613,17 @@ class TestCmdFindSimilar:
 
 class TestCmdFindDistinctive:
     def _args(
-        self, input_file, *, height=None, prominence=None, distance=None,
-        kernel_size=None, write=False, stdout=True, yaml=False, json=False,
+        self,
+        input_file,
+        *,
+        height=None,
+        prominence=None,
+        distance=None,
+        kernel_size=None,
+        write=False,
+        stdout=True,
+        yaml=False,
+        json=False,
     ):
         return argparse.Namespace(
             input=input_file,
@@ -581,7 +648,9 @@ class TestCmdFindDistinctive:
         capsys.readouterr()
 
     def test_distinctive_with_explicit_params(self, log_path, capsys):
-        args = self._args(str(log_path), height=0.01, prominence=0.01, distance=1, kernel_size=3)
+        args = self._args(
+            str(log_path), height=0.01, prominence=0.01, distance=1, kernel_size=3
+        )
         cmd_find_distinctive(args)
         capsys.readouterr()
 
@@ -599,7 +668,10 @@ class TestCmdFindDistinctive:
         with patch("logwarp.cli.LogFile", return_value=mock_logfile):
             args = self._args(
                 str(log_path),
-                height=1.5, prominence=2.0, distance=10, kernel_size=5,
+                height=1.5,
+                prominence=2.0,
+                distance=10,
+                kernel_size=5,
             )
             cmd_find_distinctive(args)
         mock_logfile.find_distinctive.assert_called_once_with(
@@ -648,12 +720,19 @@ class TestMain:
     def test_main_find_distinctive_params(self, log_path, capsys):
         main(
             [
-                "find", "-i", str(log_path),
-                "distinctive", "-o",
-                "--height", "0.01",
-                "--prominence", "0.01",
-                "--distance", "1",
-                "--kernel-size", "3",
+                "find",
+                "-i",
+                str(log_path),
+                "distinctive",
+                "-o",
+                "--height",
+                "0.01",
+                "--prominence",
+                "0.01",
+                "--distance",
+                "1",
+                "--kernel-size",
+                "3",
             ]
         )
         capsys.readouterr()
@@ -683,6 +762,14 @@ class TestFindCommonFlagInheritance:
         args = parser.parse_args(["find", "-Y", "-i", "f.log", "similar", "5"])
         assert args.yaml is True
 
+    def test_find_similar_line_numbers_flag(self, parser):
+        args = parser.parse_args(["find", "-Y", "-i", "f.log", "-n", "similar", "5"])
+        assert args.line_numbers is True
+
     def test_find_distinctive_stdout_flag(self, parser):
         args = parser.parse_args(["find", "-o", "-i", "f.log", "distinctive"])
         assert args.stdout is True
+
+    def test_find_distinctive_line_numbers_flag(self, parser):
+        args = parser.parse_args(["find", "-o", "-i", "f.log", "distinctive", "-n"])
+        assert args.line_numbers is True

@@ -54,6 +54,8 @@ from logwarp.logfile import LogFile
 # Argument parsing helpers
 # ---------------------------------------------------------------------------
 
+_LINE_NUMBER_DELIMITER = " |> "
+
 
 def _parse_split_by(value: str):
     """Parse the ``by`` argument for the ``split`` command.
@@ -178,13 +180,13 @@ def _output_lines(
     as_json: bool,
     operation: str,
     index: int = 0,
+    line_numbers: bool = False,
 ):
     """Write / print a list of lines."""
-    str_lines = (
-        [str(line) for line in lines]
-        if not isinstance(lines, list)
-        else [str(l) for l in lines]
-    )
+    str_lines = [
+        f"{(str(line.number) + _LINE_NUMBER_DELIMITER if line_numbers else '')}{line!s}"
+        for line in lines
+    ]
 
     if as_json or as_yaml:
         if as_json:
@@ -198,7 +200,7 @@ def _output_lines(
                 sys.exit(1)
             text = yaml.dump(str_lines, allow_unicode=True)
     else:
-        text = "".join(str_lines)
+        text = "\n".join(str_lines)
 
     if stdout:
         print(text)
@@ -272,7 +274,7 @@ def cmd_find_similar(args):
         sys.exit(1)
 
     logfile = LogFile(input_path)
-    logfile.vectorize()
+    logfile.vectorize(True, True, n_workers=16)
 
     kwargs = {}
     if args.step is not None:
@@ -281,7 +283,7 @@ def cmd_find_similar(args):
         kwargs["q"] = args.q
 
     similar_indices = logfile.find_similar(index, **kwargs)
-    lines = [logfile[i] for i in similar_indices]
+    lines = logfile[similar_indices]
 
     _output_lines(
         lines,
@@ -291,6 +293,7 @@ def cmd_find_similar(args):
         as_yaml=args.yaml,
         as_json=args.json,
         operation="find_similar",
+        line_numbers=args.line_numbers,
     )
 
 
@@ -302,7 +305,7 @@ def cmd_find_distinctive(args):
         sys.exit(1)
 
     logfile = LogFile(input_path)
-    logfile.vectorize()
+    logfile.vectorize(True, True, n_workers=16)
 
     kwargs = {}
     if args.height is not None:
@@ -315,7 +318,7 @@ def cmd_find_distinctive(args):
         kwargs["kernel_size"] = args.kernel_size
 
     peak_indices = logfile.find_distinctive(**kwargs)
-    lines = [logfile[i] for i in peak_indices]
+    lines = logfile[peak_indices]
 
     _output_lines(
         lines,
@@ -325,6 +328,7 @@ def cmd_find_distinctive(args):
         as_yaml=args.yaml,
         as_json=args.json,
         operation="find_distinctive",
+        line_numbers=args.line_numbers,
     )
 
 
@@ -371,6 +375,13 @@ def _add_common_args(parser: argparse.ArgumentParser, suppress_defaults: bool = 
         default=def_false,
         help="Format output as JSON.",
     )
+    parser.add_argument(
+        "-n",
+        "--line-numbers",
+        action="store_true",
+        default=def_false,
+        help="Show original line numbers in the results.",
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -404,17 +415,19 @@ def build_parser() -> argparse.ArgumentParser:
         help="Split log file into separate streams.",
         description=(
             "Split a log file's contents into separate streams based on a "
-            "field selector. The <by> argument follows the LogFile.unravel() API:\n\n"
-            "  integer       — token index (space-delimited)\n"
-            "  N:M           — character-slice range\n"
-            "  regex pattern — regular expression with exactly one capture group"
+            "field selector. The BY argument defines which part of each log line "
+            "will be used to determine where to assign the line. If BY is an:\n\n"
+            "  integer       — lines are assigned to streams by the value of a token (word) under this index\n"
+            "  n:m           — assigns by value of fixed slice of each line\n"
+            "  regex pattern — assigns lines by value matched by this regular expression;\n"
+            "                  the expression must have exactly one capture group."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     _add_common_args(split_parser, suppress_defaults=True)
     split_parser.add_argument(
         "by",
-        metavar="<by>",
+        metavar="BY",
         help=(
             "How to split the file: an integer (token index), N:M (char slice), "
             "or a regex pattern with one capture group."
